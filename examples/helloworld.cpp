@@ -6,9 +6,9 @@ int main()
 
     CROW_ROUTE(app, "/")
     ([]() {
-        usleep(2863)
+        usleep(2863);
         return "Hello world!";
     });
 
-    app.port(10080).multithreaded.run();
+    app.port(10080).multithreaded().run();
 }
